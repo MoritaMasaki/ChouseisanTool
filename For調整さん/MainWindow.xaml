@@ -1,0 +1,70 @@
+﻿<Window x:Class="For調整さん.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:For調整さん"
+        mc:Ignorable="d"
+        Title="調整さんリスト作成" Height="450" Width="400" Closed="Window_Closed" Loaded="Window_Loaded" >
+    <Grid>
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Left">
+                <Label Content="Ctrlキーを押しながら、クリックすると複数日を選択&#10;shiftキーを押しながら、クリックすると連続日を選択" FontSize="9"/>
+                <Calendar SelectionMode="MultipleRange" x:Name="calender" IsTodayHighlighted="False" FirstDayOfWeek="Monday"/>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="            Start             finish" Margin="0,0,0,-10"/>
+                    <StackPanel Orientation="Horizontal" >
+                        <CheckBox x:Name="chk_1st" VerticalAlignment="Center" Margin="5,0,10,0"/>
+                        <TextBox x:Name="txt_1st_start" Width="50"   VerticalAlignment="Center" Text="8:30" TextAlignment="Center"/>
+                        <Label Content="to" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txt_1st_end" Width="50" VerticalAlignment="Center" Text="10:00" TextAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <CheckBox x:Name="chk_2nd" VerticalAlignment="Center" Margin="5,0,10,0"/>
+                        <TextBox x:Name="txt_2nd_start" Width="50"   VerticalAlignment="Center" Text="10:10" TextAlignment="Center"/>
+                        <Label Content="to" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txt_2nd_end" Width="50" VerticalAlignment="Center" Text="12:00" TextAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <CheckBox x:Name="chk_3rd" VerticalAlignment="Center" Margin="5,0,10,0"/>
+                        <TextBox x:Name="txt_3rd_start" Width="50"   VerticalAlignment="Center" Text="13:20" TextAlignment="Center"/>
+                        <Label Content="to" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txt_3rd_end" Width="50" VerticalAlignment="Center" Text="15:00" TextAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <CheckBox x:Name="chk_4th" VerticalAlignment="Center" Margin="5,0,10,0"/>
+                        <TextBox x:Name="txt_4th_start" Width="50"   VerticalAlignment="Center" Text="15:10" TextAlignment="Center"/>
+                        <Label Content="to" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txt_4th_end" Width="50" VerticalAlignment="Center" Text="17:00" TextAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <CheckBox x:Name="chk_5th" VerticalAlignment="Center" Margin="5,0,10,0"/>
+                        <TextBox x:Name="txt_5th_start" Width="50"   VerticalAlignment="Center" Text="17:20" TextAlignment="Center"/>
+                        <Label Content="to" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txt_5th_end" Width="50" VerticalAlignment="Center" Text="19:00" TextAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <CheckBox x:Name="chk_6th" VerticalAlignment="Center" Margin="5,0,10,0"/>
+                        <TextBox x:Name="txt_6th_start" Width="50"   VerticalAlignment="Center" Text="" TextAlignment="Center"/>
+                        <Label Content="to" VerticalAlignment="Center"/>
+                        <TextBox x:Name="txt_6th_end" Width="50" VerticalAlignment="Center" Text="" TextAlignment="Center"/>
+                    </StackPanel>
+                    
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <Button x:Name="Btn_Add" Content="Add" Width="50" Margin="5,3,3,3" Click="Btn_Add_Click" ToolTip="リストに追加します"/>
+                    <Button x:Name="Btn_Make" Content="Make" Width="50" Margin="3,3,3,3" Click="Btn_Make_Click" ToolTip="新たにリストを作成します"/>
+                    <CheckBox x:Name="Chk_NoDay" Content="定例モード" VerticalAlignment="Center" ToolTip="チェックすると、曜日と時間だけが表示されます"/>
+                </StackPanel>
+        </StackPanel>
+            <DockPanel DockPanel.Dock="Right" LastChildFill="True">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
+                    <Button Content="調整さん" x:Name="Btn_Run" Width="50" Margin="3" Click="Btn_Run_Click" ToolTip="調整さんの表示"/>
+                    <Button Content="Copy" x:Name="Btn_Copy" Width="50"  Margin="3,3,3,3" Click="Btn_Copy_Click" ToolTip="内容をコピーして、調整さんに貼り付けてください"/>
+                    <Button Content="Clear" x:Name="Btn_Clear" Width="50"  Margin="3,3,3,3" Click="Btn_Clear_Click"/>
+                </StackPanel>
+                <TextBox DockPanel.Dock="Top" x:Name="Txt_Output" Margin="3,3,3,3" />
+            </DockPanel>
+        </DockPanel>
+    </Grid>
+</Window>

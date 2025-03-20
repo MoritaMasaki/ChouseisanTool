@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="For調整さん.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="start1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8:30</Value>
+    </Setting>
+    <Setting Name="end1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10:00</Value>
+    </Setting>
+    <Setting Name="start2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10:10</Value>
+    </Setting>
+    <Setting Name="end2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">12:00</Value>
+    </Setting>
+    <Setting Name="start3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">13:20</Value>
+    </Setting>
+    <Setting Name="end3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">15:00</Value>
+    </Setting>
+    <Setting Name="start4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">15:10</Value>
+    </Setting>
+    <Setting Name="end4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">17:00</Value>
+    </Setting>
+    <Setting Name="start5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">17:20</Value>
+    </Setting>
+    <Setting Name="end5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">19:00</Value>
+    </Setting>
+    <Setting Name="start6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="end6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
